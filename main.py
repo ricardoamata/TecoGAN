@@ -7,7 +7,7 @@ import os, math, time, collections, numpy as np
 3 = INFO, WARNING, and ERROR messages are not printed
 Disable Logs for now '''
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
 from tensorflow.python.util import deprecation
